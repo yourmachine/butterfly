@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="icon" href="./images/logo.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+    <title>آلة الخياطة Butterfly JH5209</title>
+
+
+
+
+
+    <!-- Facebook Pixel Code -->
+<!-- <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+     fbq('init', '361586089711809'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=361586089711809&ev=PageView
+    &noscript=1"/>
+    </noscript> -->
+    <!-- End Facebook Pixel Code -->
+
+
+
+
+        <!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+     fbq('init', '361586089711809'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=361586089711809&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+
+
+
+
+    <style> 
+        .container-img {
+            margin-bottom: 20px;
+        }
+        
+        .img-large {
+            width: 100%;
+            height: auto;
+            transition: opacity 0.3s ease;
+        }
+        
+        .container-slide-img {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+        }
+        
+        .img-small {
+            width: 25%;
+            height: 80px;
+            cursor: pointer;
+            opacity: 0.5;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        
+        .img-small.active {
+            opacity: 1;
+        }
+        
+        .img-small:hover {
+            transform: scale(1.1);
+        }
+        
+        
+        </style>
+
+</head>
+
+<body>
+    <div id="reload">
+        <div class="loader"></div>
+    </div>
+
+    <!-- <header style="display: flex; direction: rtl; justify-content: space-between; align-items: center; padding: 0 20px;  ">
+        <img style="width: 60px; height: 60px;" src="./images/logo.png" alt="">
+        <h3 style="color: white;">أطلب الأن التوصيل 58 ولاية</h3>
+        </header> -->
+<div class="headerTwo" style="background-color: #270344; color: white; height: 50px; font-size: 23px; display: flex; justify-content: center; align-items: center; font-family:'El Messiri', sans-serif;">
+    0555693725
+</div>
+<div class="headerThree" style="margin: 0;">
+    <img style="width: 100%;" src="./images/23.jpg" alt="">
+</div>
+
+    <div class="container" dir="rtl">
+
+
+        <div id="product-details">
+            <div class="imagePrice" style="display: none;">
+                <p>السعر: <span id="product-price"></span></p>
+                <img src="" id="product-image" alt="صورة المنتج">
+            </div>
+
+
+            
+        <div id="product-details">
+            <h2 style="color: #CA2051;">آلة الخياطة Butterfly JH5209</h2>
+            
+            <div class="container-img">
+                <img class="img-large" id="largeImage" src="./images/1.jpg" alt="صورة كبيرة" ontouchstart="startTouch(event)" ontouchend="endTouch(event)">
+            </div>
+            <div class="container-slide-img">
+                <img class="img-small active" src="./images/1.jpg" alt="صورة صغيرة 1" onclick="changeImage(this)">
+                <img class="img-small" src="./images/30.jpeg" alt="صورة صغيرة 2" onclick="changeImage(this)">
+                <img class="img-small" src="./images/32.jpeg" alt="صورة صغيرة 3" onclick="changeImage(this)">
+                <img class="img-small" src="./images/33.jpeg" alt="صورة صغيرة 4" onclick="changeImage(this)">
+            </div>
+
+ 
+
+
+            <div class="imagePrice">
+                <div style="display: flex; align-items: flex-start; flex-direction: column; gap: 0px;">
+
+                    <h1 style="color: #12c329;">23.900 دج</h1>
+                    <!-- <h2 style="text-decoration: line-through; font-weight: normal; color: red;">27000 دج</h2> -->
+                </div>
+               <br>
+    
+            </div>
+            <div style="display: flex;
+            color: gold; width: 100%; justify-content: flex-start; font-size: 20px; margin-bottom: 8px; gap: 4px;">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+    
+
+
+
+         
+            <br>
+
+ <div>
+    <p class="wasf" style="font-size: 14px;">
+        💥💥ماكنة خياطة butterfly 🦋 👌 <br>
+
+        🔹🔹🔹نوع جديد من العلامة الغنية عن التعريف 😍 <br>
+        
+        ✅الهيكل معدني حتى الكانات و بورت كانات حديد ⚙ <br>
+        
+        ✅محرك اقتصادي وغير مستهلك للكهرباء ♻ <br>
+        
+        ✅ذات 9 غرز منها غرزة السرفلة (السورجي )💪 <br>
+        
+        📌الكثير من الغرزة المطلوبة في الطرز و الخياطة العصرية
+    </p>
+</div>
+<br> 
+
+<form id="orderForm" action="https://script.google.com/macros/s/AKfycbyYmZ38HTTzLC-bbsczHJ3maJvxnqJhXVjFtx1X_DXasoZPd8X48BW1_bHpbfljgCl2QA/exec" method="POST" name="contact-form">
+    <!-- <label for="Quantity">الكمية</label>
+    <div style="display: flex; align-items: center; width: 100%; gap: 5px;">
+        <div id="decrement" style="text-decoration: none; display: flex; align-items: center; justify-content: center; background-color: #056f2f; width: 50px; height: 50px; color: aliceblue; font-size: 30px; border-radius: 5px;" href="#"><i  style="font-size: 17px;" class="fa-solid fa-minus"></i></div>
+        <input type="number" name="الكمية" id="Quantity" value="1" pattern="[1-9][0-9]*" required readonly>
+        <p id="error-quantity" class="error-message" style="display:none;">من فضلك أدخل الكمية</p>
+        <div id="increment" style="text-decoration: none; display: flex; align-items: center; justify-content: center; background-color: #056f2f; width: 50px; height: 50px; color: aliceblue; font-size: 30px; border-radius: 5px;" href="#"><i style="font-size: 17px;" class="fa-solid fa-plus"></i></div>
+    </div> -->
+    <label style="margin-top: 5px;" for="product-name">اسم المنتج </label>
+    <input style="display: none;" type="text" name="" id="product-name" readonly>
+    <input type="text" name="إسم المنتج" id="pro" readonly value="Butterfly JH5209">
+    <div style="display: flex; gap: 5px;">
+    <input style="font-family:  Cairo;" type="text" id="fullName" name="الإسم الكامل" placeholder="أكتب إسمك 👤" required>
+    <input style="font-family: Cairo;" type="text" id="yourNumber" name="رقم الهاتف" placeholder="رقم الهاتف 📱" required>
+    </div>
+    <div id="phoneWarning" class="warning">يرجى إدخال رقم هاتف صحيح</div>
+   <div style="display: flex; gap: 5px; margin-top: 5px;">
+    <select style="background: #ba1d1d25; width: 50%; font-size: 17px; font-family:  Cairo;" name="الولاية" id="location" required>
+        <option value="" selected disabled>اختر ولايتك 🌐</option>
+        <option value="أدرار">1. ولاية أدرار</option>
+        <option value="الشلف">2. ولاية الشلف</option>
+        <option value="الأغواط">3. ولاية الأغواط</option>
+        <option value="أم البواقي">4. ولاية أم البواقي</option>
+        <option value="باتنة">5. ولاية باتنة</option>
+        <option value="بجاية">6. ولاية بجاية</option>
+        <option value="بسكرة">7. ولاية بسكرة</option>
+        <option value="بشار">8. ولاية بشار</option>
+        <option value="البليدة">9. ولاية البليدة</option>
+        <option value="البويرة">10. ولاية البويرة</option>
+        <option value="تمنراست">11. ولاية تمنراست</option>
+        <option value="تبسة">12. ولاية تبسة</option>
+        <option value="تلمسان">13. ولاية تلمسان</option>
+        <option value="تيارت">14. ولاية تيارت</option>
+        <option value="تيزي وزو">15. ولاية تيزي وزو</option>
+        <option value="الجزائر">16. ولاية الجزائر</option>
+        <option value="الجلفة">17. ولاية الجلفة</option>
+        <option value="جيجل">18. ولاية جيجل</option>
+        <option value="سطيف">19. ولاية سطيف</option>
+        <option value="سعيدة">20. ولاية سعيدة</option>
+        <option value="سكيكدة">21. ولاية سكيكدة</option>
+        <option value="سيدي بلعباس">22. ولاية سيدي بلعباس</option>
+        <option value="عنابة">23. ولاية عنابة</option>
+        <option value="قالمة">24. ولاية قالمة</option>
+        <option value="قسنطينة">25. ولاية قسنطينة</option>
+        <option value="المدية">26. ولاية المدية</option>
+        <option value="مستغانم">27. ولاية مستغانم</option>
+        <option value="المسيلة">28. ولاية المسيلة</option>
+        <option value="معسكر">29. ولاية معسكر</option>
+        <option value="ورقلة">30. ولاية ورقلة</option>
+        <option value="وهران">31. ولاية وهران</option>
+        <option value="البيض">32. ولاية البيض</option>
+        <option value="إليزي">33. ولاية إليزي</option>
+        <option value="برج بوعريريج">34. ولاية برج بوعريريج</option>
+        <option value="بومرداس">35. ولاية بومرداس</option>
+        <option value="الطارف">36. ولاية الطارف</option>
+        <option value="تندوف">37. ولاية تندوف</option>
+        <option value="تيسمسيلت">38. ولاية تيسمسيلت</option>
+        <option value="الوادي">39. ولاية الوادي</option>
+        <option value="خنشلة">40. ولاية خنشلة</option>
+        <option value="سوق أهراس">41. ولاية سوق أهراس</option>
+        <option value="تيبازة">42. ولاية تيبازة</option>
+        <option value="ميلة">43. ولاية ميلة</option>
+        <option value="عين الدفلى">44. ولاية عين الدفلى</option>
+        <option value="النعامة">45. ولاية النعامة</option>
+        <option value="عين تموشنت">46. ولاية عين تموشنت</option>
+        <option value="غرداية">47. ولاية غرداية</option>
+        <option value="غليزان">48. ولاية غليزان</option>
+        <option value="تيميمون">49. ولاية تيميمون</option>
+        <option value="برج باجي مختار">50. ولاية برج باجي مختار</option>
+        <option value="أولاد جلال">51. ولاية أولاد جلال</option>
+        <option value="بني عباس">52. ولاية بني عباس</option>
+        <option value="إن صالح">53. ولاية إن صالح</option>
+        <option value="عين قزام">54. ولاية عين قزام</option>
+        <option value="تقرت">55. ولاية تقرت</option>
+        <option value="جانت">56. ولاية جانت</option>
+        <option value="المغير">57. ولاية المغير</option>
+        <option value="المنيعة">58. ولاية المنيعة</option>
+        
+    </select>
+    <select style="background: #ba1d1d25; width: 50%; font-size: 17px; font-family:  Cairo;" name="التوصيل" id="price" required>
+        <option value="" selected disabled>اختر التوصيل 🚚</option>
+        <option value="المنزل">المنزل</option>
+        <option value="المكتب">المكتب</option>
+    </select>
+   </div>
+
+
+
+   <input style="margin-top: 5px; font-family:  Cairo;" type="text" id="yourcity" name="البلدية" placeholder="البلدية 🏠" required>
+  <textarea  style="font-family:  Cairo; padding: 5px; font-size: 15px;  background: white; outline: none; margin-top: 5px;" placeholder="اكتب ملاحظة حول الطلب" name="ملاحظة" id="" cols="30" rows="3"></textarea>
+  <button type="submit" id="submitBtn" class="button">تأكيد الطلب</button>
+
+    <div style="border:1px solid red; padding: 8px; background: white; border-radius: 10px;">
+        <!-- <h3 style="text-align: center;"> ملخص الطلبية </h3>
+        <div style="display: flex; gap: 5px; font-weight: bold;">
+            <p>سعر المنتج : </p>
+            <p style="color: #8a0909;" id="priceProductId">4800 دج</p>
+        </div> -->
+    
+        <div style="font-weight: bold;">
+            <div style="display: flex; gap: 5px;">
+                <p>سعر المنتج : </p>
+                <p style="color: #8a0909;" id="productId">23900 دج</p>
+            </div>
+
+            <div style="display: flex; gap: 5px;">
+                <p>سعر الشحن : <span style="background: green; color: white; padding: 0 5px; border-radius: 6px;">500 دج (للمنزل)</span></p>
+                <!-- <p style="color: #8a0909;" id="priceId">اختر (الولاية + التوصيل)</p> -->
+            </div>
+
+            <div style="display: flex; gap: 5px; margin-top: 10px;">
+                <p>السعر الاجمالي : </p>
+                <p style="color: #8a0909;" id="productId">24400 دج</p>
+            </div>
+        </div>
+    </div>
+</form>
+
+<br>
+<div>
+<img style="width: 100%;" src="./images/1.png" alt="">
+</div>
+
+
+<section class="review">
+    <h2 class="revi" style="text-align: center; margin-bottom: 15px; font-size: 30px; color: #8a0909;">آراء الزبائن</h2>
+    <div class="slide-container">
+        <div class="slide">
+            <img style="width: 100%; height: auto;" src="./images/10.png" alt="">
+            <img style="width: 100%; height: auto;" src="./images/11.jpg" alt="">
+            <img style="width: 100%; height: auto;" src="./images/12.jpg" alt="">
+            <!-- <img style="width: 100%;" src="./images/13.jpg" alt="">
+            <img style="width: 100%;" src="./images/14.jpg" alt="">
+            <img style="width: 100%;" src="./images/15.jpg" alt="">
+            <img style="width: 100%;" src="./images/16.jpg" alt="">
+            <img style="width: 100%;" src="./images/17.jpg" alt="">
+            <img style="width: 100%;" src="./images/17 (2).jpg" alt="">
+            <img style="width: 100%;" src="./images/18.jpg" alt="">
+            <img style="width: 100%;" src="./images/19.jpg" alt="">
+            <img style="width: 100%;" src="./images/20.jpg" alt=""> -->
+        </div>
+    </div>
+</section>
+
+
+<br>
+
+
+
+
+
+
+
+            <p style="display: none;">الوصف: <span id="product-description"></span></p>
+            <!-- <div class="del">
+                <h3>أسعار الشحن</h3>
+                <img src="./5.jpg" alt="">
+            </div> -->
+        </div>
+        <a class="phone-btn" href="tel:0555693725"><i class="fa-solid fa-phone"></i></a>
+        <br>
+
+
+   
+    
+        <!-- <video width="100%" loop  muted id="myVideo">
+            <source src="./images/1.mp4" type="video/mp4">
+        </video> -->
+        
+ 
+        
+
+        <div>
+            <img style="width: 100%;" src="./images/2.jpg" alt="">
+           
+            <img style="width: 100%;" src="./images/3.jpg" alt="">
+        </div>
+
+
+
+ 
+
+
+        <div>
+           
+
+         
+        
+        </div>
+        <div>
+  
+            <img style="width: 100%;" src="./images/6.jpg" alt="">
+           
+            <img style="width: 100%;" src="./images/7.jpg" alt="">
+           
+            <img style="width: 100%;" src="./images/8.jpg" alt="">
+            <img style="width: 100%;" src="./images/30.jpeg" alt="">
+            <img style="width: 100%;" src="./images/31.jpeg" alt="">
+            <img style="width: 100%;" src="./images/32.jpeg" alt="">
+            <img style="width: 100%;" src="./images/33.jpeg" alt="">
+            <img style="width: 100%;" src="./images/34.jpeg" alt="">
+            <img style="width: 100%;" src="./images/35.jpeg" alt="">
+            <img style="width: 100%;" src="./images/36.jpeg" alt="">
+
+        </div> 
+
+      
+
+
+
+
+
+
+
+
+
+    
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <footer style="background-color: #230e0e; width: 100%; color: white; height: 60px; display: flex; justify-content: center; align-items: center;">
+        <p>جميع الحقوق محفوظة Your Machine 2024</p>
+    </footer>
+    
+
+    <button class="btn-order"><i class="animation"></i>أطلب الآن<i class="animation"></i></button>
+
+    <script>
+        // استخراج البيانات من عنوان الصفحة
+        var urlParams = new URLSearchParams(window.location.search);
+        var productName = urlParams.get('productName');
+        var price = urlParams.get('price');
+        var description = urlParams.get('description');
+        var imageUrl = urlParams.get('imageUrl');
+
+        // عرض البيانات في صفحة الطلب
+        document.getElementById("product-name").value = productName;
+        document.getElementById('product-price').textContent = price + " دج";
+        document.getElementById('product-description').textContent = description;
+        document.getElementById('product-image').src = imageUrl;
+
+        const form = document.getElementById('orderForm');
+        form.addEventListener('submit', function (event) {
+            const quantity = document.getElementById('Quantity');
+            const fullName = document.getElementById('fullName');
+            const yourNumber = document.getElementById('yourNumber');
+            const state = document.getElementById('state');
+
+        });
+
+        var originalPrice = parseFloat(document.getElementById("product-price").innerText);
+
+        function updatePrice() {
+            var quantity = document.getElementById("Quantity").value; // الكمية التي أدخلها المستخدم
+            var priceElement = document.getElementById("product-price"); // عنصر عرض السعر
+            var errorMessage = document.getElementById("error-quantity"); // عنصر الرسالة الخطأ
+
+            // إظهار رسالة الخطأ إذا كانت الكمية فارغة
+            if (quantity.trim() === "") {
+                errorMessage.style.display = "block";
+                priceElement.innerText = originalPrice + " دج"; // إعادة السعر إلى القيمة الأصلية
+                return;
+            } else {
+                errorMessage.style.display = "none";
+            }
+
+            // التأكد من أن القيمة المدخلة هي رقم صحيح
+            if (!isNaN(quantity) && parseInt(quantity) > 0) {
+                // تحديث قيمة السعر بحسب الكمية
+                priceElement.innerText = parseInt(quantity) * originalPrice + " دج";
+            }
+        }
+
+        document.getElementById("Quantity").addEventListener("input", updatePrice);
+
+
+
+
+
+    //     document.getElementById("increment").addEventListener("click", function() {
+    //     var quantityInput = document.getElementById("Quantity");
+    //     var currentValue = parseInt(quantityInput.value);
+    //     if (!isNaN(currentValue)) {
+    //         quantityInput.value = currentValue + 1;
+    //     }
+    // });
+
+    // document.getElementById("decrement").addEventListener("click", function() {
+    //     var quantityInput = document.getElementById("Quantity");
+    //     var currentValue = parseInt(quantityInput.value);
+    //     if (!isNaN(currentValue) && currentValue > 1) {
+    //         quantityInput.value = currentValue - 1;
+    //     }
+    // });
+
+
+    function updatePrice(quantity, price) {
+        var totalPrice = price * quantity;
+        document.getElementById("product-price").textContent = totalPrice;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    document.getElementById("location").addEventListener("change", function() {
+            updatePrice();
+        });
+    
+        document.getElementById("price").addEventListener("change", function() {
+            updatePrice();
+        });
+    
+        function updatePrice() {
+            var state = document.getElementById("location").value;
+            var deliveryType = document.getElementById("price").value;
+            var priceId = document.getElementById("priceId");
+    
+            // Prices for home and office delivery for each state
+            var prices = {
+    "أدرار": { "المنزل": 1400, "المكتب": 900 },
+    "الشلف": { "المنزل": 800, "المكتب": 450 },
+    "الأغواط": { "المنزل": 950, "المكتب": 600 },
+    "أم البواقي": { "المنزل": 600, "المكتب": 450 },
+    "باتنة": { "المنزل": 700, "المكتب": 450 },
+    "بجاية": { "المنزل": 750, "المكتب": 450 },
+    "بسكرة": { "المنزل": 950, "المكتب": 550 },
+    "بشار": { "المنزل": 1100, "المكتب": 650 },
+    "البليدة": { "المنزل": 750, "المكتب": 450 },
+    "البويرة": { "المنزل": 750, "المكتب": 450 },
+    "تمنراست": { "المنزل": 1600, "المكتب": 1050 },
+    "تبسة": { "المنزل": 750, "المكتب": 450 },
+    "تلمسان": { "المنزل": 900, "المكتب": 500 },
+    "تيارت": { "المنزل": 800, "المكتب": 450 },
+    "تيزي وزو": { "المنزل": 750, "المكتب": 450 },
+    "الجزائر": { "المنزل": 600, "المكتب": 400 },
+    "الجلفة": { "المنزل": 950, "المكتب": 600 },
+    "جيجل": { "المنزل": 750, "المكتب": 450 },
+    "سطيف": { "المنزل": 750, "المكتب": 450 },
+    "سعيدة": { "المنزل": 800, "المكتب": "-" },
+    "سكيكدة": { "المنزل": 700, "المكتب": 450 },
+    "سيدي بلعباس": { "المنزل": 800, "المكتب": 450 },
+    "عنابة": { "المنزل": 700, "المكتب": 450 },
+    "قالمة": { "المنزل": 700, "المكتب": 450 },
+    "قسنطينة": { "المنزل": 700, "المكتب": 450 },
+    "المدية": { "المنزل": 800, "المكتب": 450 },
+    "مستغانم": { "المنزل": 800, "المكتب": 450 },
+    "المسيلة": { "المنزل": 800, "المكتب": 550 },
+    "معسكر": { "المنزل": 800, "المكتب": 450 },
+    "ورقلة": { "المنزل": 1000, "المكتب": 600 },
+    "وهران": { "المنزل": 800, "المكتب": 450 },
+    "البيض": { "المنزل": 1100, "المكتب": 600 },
+    "إليزي": { "المنزل": 1500, "المكتب": 0 },
+    "برج بوعريريج": { "المنزل": 750, "المكتب": 450 },
+    "بومرداس": { "المنزل": 750, "المكتب": 450 },
+    "الطارف": { "المنزل": 800, "المكتب": 450 },
+    "تندوف": { "المنزل": 1500, "المكتب": 0 },
+    "تيسمسيلت": { "المنزل": 800, "المكتب": "-" },
+    "الوادي": { "المنزل": 1000, "المكتب": 600 },
+    "خنشلة": { "المنزل": 700, "المكتب": "-" },
+    "سوق أهراس": { "المنزل": 500, "المكتب": 300 },
+    "تيبازة": { "المنزل": 750, "المكتب": 450 },
+    "ميلة": { "المنزل": 700, "المكتب": 450 },
+    "عين الدفلى": { "المنزل": 750, "المكتب": 450 },
+    "النعامة": { "المنزل": 1100, "المكتب": 600 },
+    "عين تموشنت": { "المنزل": 800, "المكتب": 450 },
+    "غرداية": { "المنزل": 950, "المكتب": 600 },
+    "غليزان": { "المنزل": 800, "المكتب": 450 },
+    "تيميمون": { "المنزل": 1400, "المكتب": "-" },
+    "أولاد جلال": { "المنزل": 950, "المكتب": 550 },
+    "عين قزام": { "المنزل": 1600, "المكتب": "-" },
+    "بني عباس": { "المنزل": 1000, "المكتب": "-" },
+    "إن صالح": { "المنزل": 1600, "المكتب": "-" },
+    "تقرت": { "المنزل": 1600, "المكتب": 600 },
+    "جانت": { "المنزل": 1500, "المكتب": 0 },
+    "المغير": { "المنزل": 950, "المكتب": "-" },
+    "المنيعة": { "المنزل": 1000, "المكتب": "-" }
+};
+    
+            // Check if the selected state exists in the prices object
+            if (prices.hasOwnProperty(state)) {
+                if (prices[state].hasOwnProperty(deliveryType)) {
+                    var deliveryPrice = prices[state][deliveryType];
+                    priceId.textContent = deliveryPrice + " دج";
+                }
+            }
+        }
+    </script>
+
+
+
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyYmZ38HTTzLC-bbsczHJ3maJvxnqJhXVjFtx1X_DXasoZPd8X48BW1_bHpbfljgCl2QA/exec';
+    const form1 = document.forms['contact-form'];
+
+    form1.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form1)})
+        .then(response => Swal.fire({
+        title: 'تم إرسال الطلب',
+        text: 'سيتم التواصل معكم قريبا',
+        icon: 'success',
+        confirmButtonText: 'حسنا',
+        className: "done",
+
+            }))
+        .then(() => { window.location.reload(); })
+        .catch(document.getElementById("reload").style.display = "block");
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+   
+    document.querySelector('.btn-order').addEventListener('click', function() {
+        window.scrollTo({
+            top: 800,
+            behavior: 'smooth'
+        });
+        this.style.display = 'none';
+    });
+
+
+
+
+    const decrementButton = document.getElementById('decrement');
+const incrementButton = document.getElementById('increment');
+const quantityInput = document.getElementById('Quantity');
+const priceDisplay = document.getElementById('productId');
+const unitPrice = 23900; // سعر الوحدة
+
+// عند الضغط على زر الزيادة
+incrementButton.addEventListener('click', () => {
+    let quantity = parseInt(quantityInput.value, 10);
+    quantity += 1;
+    quantityInput.value = quantity;
+    calculateTotalPrice(quantity);
+});
+
+// عند الضغط على زر النقصان
+decrementButton.addEventListener('click', () => {
+    let quantity = parseInt(quantityInput.value, 10);
+    if (quantity > 1) {
+        quantity -= 1;
+        quantityInput.value = quantity;
+        calculateTotalPrice(quantity);
+    }
+});
+
+// دالة لتحديث السعر
+function calculateTotalPrice(quantity) {
+    const newPrice = unitPrice * quantity;
+    priceDisplay.textContent = `${newPrice} دج`;
+}
+
+</script>
+
+
+<script>
+    const phoneInput = document.getElementById('yourNumber');
+    const submitBtn = document.getElementById('submitBtn');
+    const phoneWarning = document.getElementById('phoneWarning');
+
+    // Function to validate phone number
+    function validatePhoneNumber() {
+        const phonePattern = /^(05|06|07)\d{8}$/;
+        const isValid = phonePattern.test(phoneInput.value);
+        submitBtn.disabled = !isValid;
+        phoneWarning.style.display = isValid || phoneInput.value === '' ? 'none' : 'block';
+    }
+
+    // Event listener to trigger validation on input change
+    phoneInput.addEventListener('input', validatePhoneNumber);
+</script>
+
+
+
+
+<script>
+    let touchStartX = 0;
+    let touchEndX = 0;
+    let isSwiping = false;
+    
+    function changeImage(element) {
+        const largeImage = document.getElementById('largeImage');
+        largeImage.style.opacity = 0;
+    
+        setTimeout(() => {
+            largeImage.src = element.src;
+            largeImage.style.opacity = 1;
+        }, 300);
+    
+        // إزالة الفئة 'active' من جميع الصور الصغيرة
+        const smallImages = document.querySelectorAll('.img-small');
+        smallImages.forEach(img => img.classList.remove('active'));
+    
+        // إضافة الفئة 'active' للصورة التي تم النقر عليها
+        element.classList.add('active');
+    }
+    
+    function startTouch(event) {
+        touchStartX = event.touches[0].clientX;
+        isSwiping = true;
+    }
+    
+    function moveTouch(event) {
+        if (isSwiping) {
+            touchEndX = event.touches[0].clientX;
+        }
+    }
+    
+    function endTouch(event) {
+        if (isSwiping) {
+            isSwiping = false;
+            handleGesture();
+        }
+    }
+    
+    function handleGesture() {
+        const smallImages = document.querySelectorAll('.img-small');
+        const activeImage = document.querySelector('.img-small.active');
+        let newIndex;
+    
+        if (touchEndX < touchStartX) {
+            // السحب لليسار، الانتقال إلى الصورة التالية
+            newIndex = [...smallImages].indexOf(activeImage) + 1;
+            if (newIndex >= smallImages.length) newIndex = 0; // الرجوع إلى الصورة الأولى إذا كانت الأخيرة
+        } else if (touchEndX > touchStartX) {
+            // السحب لليمين، الانتقال إلى الصورة السابقة
+            newIndex = [...smallImages].indexOf(activeImage) - 1;
+            if (newIndex < 0) newIndex = smallImages.length - 1; // الانتقال إلى الصورة الأخيرة إذا كانت الأولى
+        }
+    
+        changeImage(smallImages[newIndex]);
+    }
+    
+    </script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const video = document.getElementById('myVideo');
+
+        // Create an Intersection Observer
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        }, {
+            threshold: 0.5 // Adjust the threshold as needed
+        });
+
+        // Observe the video element
+        observer.observe(video);
+    });
+</script>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const slide = document.querySelector('.slide');
+    const images = slide.querySelectorAll('img');
+    let currentIndex = 0;
+
+    function showNextImage() {
+        currentIndex++;
+        if (currentIndex >= images.length) {
+            currentIndex = 0;
+        }
+        slide.style.transform = `translateX(${currentIndex * 100}%)`;
+    }
+
+    setInterval(showNextImage, 4000); // تغيير الصورة كل 3 ثوانٍ
+});
+
+</script>
+</body>
+
+</html>

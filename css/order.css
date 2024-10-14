@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "El Messiri", sans-serif;
+  background: linear-gradient(#ffffff, #eae9e9);
+ 
+}
+.error-message {
+  font-size: 12px;
+  color: red;
+}
+input {
+  height: 50px;
+  width: 100%;
+  font-size: 18px;
+  padding: 0 5px;
+  background: #fff;
+  border: 1px solid #000;
+  outline: none;
+  border-radius: 4px;
+}
+
+select {
+  height: 50px;
+  background: white;
+  border-radius: 4px;
+}
+#Quantity {
+  width: 80px;
+  text-align: center;
+}
+.container {
+  width: 500px;
+  max-width: 95%;
+  margin: 20px auto;
+  position: relative;
+
+}
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid rgb(164, 8, 8);
+  background: white;
+}
+.container .imagePrice img {
+  height: 100%;
+}
+.container .imagePrice #product-price {
+  font-size: 27px;
+  color: rgb(171, 9, 9);
+}
+.container #product-name {
+  font-size: 25px;
+  border: none;
+  color: green;
+  outline: none;
+  background-color: transparent;
+}
+.container #product-name:focus {
+  box-shadow: none;
+}
+
+/* button */
+.button {
+  position: relative;
+  padding: 5px 15px;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #0e6313;
+  transition: all 0.2s ease;
+  margin: 15px auto;
+  font-size: 18px;
+  font-family: "Cairo";
+}
+
+.button:active {
+  transform: scale(0.96);
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.del h3 {
+  font-size: 25px;
+  color: #9a0f0f;
+  position: relative;
+  margin-bottom: 10px;
+}
+.del img {
+  max-width: 100%;
+}
+.del h3::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  background: #9a0f0f;
+  
+}
+
+.fa-phone {
+  background: rgb(23, 188, 18);
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-size: 22px;
+  padding: 12px;
+  border-radius: 50%;
+  animation: bounce 0.5s infinite;
+}
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+
+.loader {
+  position: relative;
+  width: 120px;
+  height: 90px;
+  margin: 0 auto;
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #2a9d8f;
+  animation: loading-bounce 0.5s ease-in-out infinite alternate;
+}
+
+.loader:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 7px;
+  width: 45px;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #f2f2f2, -35px 50px 0 #f2f2f2, -70px 95px 0 #f2f2f2;
+  animation: loading-step 1s ease-in-out infinite;
+}
+
+@keyframes loading-bounce {
+  0% {
+    transform: scale(1, 0.7);
+  }
+
+  40% {
+    transform: scale(0.8, 1.2);
+  }
+
+  60% {
+    transform: scale(1, 1);
+  }
+
+  100% {
+    bottom: 140px;
+  }
+}
+
+@keyframes loading-step {
+  0% {
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0),
+            0 10px 0 #110a33,
+            -35px 50px 0 #110a33,
+            -70px 90px 0 #110a33;
+  }
+
+  100% {
+    box-shadow: 0 10px 0 #110a33,
+            -35px 50px 0 #110a33,
+            -70px 90px 0 #110a33,
+            -70px 90px 0 rgba(0, 0, 0, 0);
+  }
+}
+
+
+#reload {
+  display: none;
+  z-index: 10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.done {
+  z-index: 11;
+}
+
+
+header {
+  height: 70px;
+
+}
+header {
+  background: linear-gradient(to right, #ddd6d6 0%, #CA2051 45%, #CA2051 80%);
+  background-size: 200% 100%;
+  animation: moveGradient 5s linear infinite;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 100% 0;
+  }
+  50% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+
+#pro {
+  color: #1c7510; /* تأكد من تحديد لون النص لتظهر الخطوط بشكل صحيح */
+  border: none; /* إزالة حدود الحقل لتبدو أكثر انسجاماً مع التصميم */
+  background-color: transparent; /* خلفية شفافة */
+  font-size: 18px; /* ضبط حجم الخط إذا لزم الأمر */
+  width: auto; /* ضبط العرض ليكون مناسباً للنص */
+  font-family: "Cairo";
+  font-weight: bold;
+
+}
+
+.wasf {
+
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+
+
+
+.btn-order {
+
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #CA2051;
+  min-width: 70%;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding: 1px 15px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-family: "El Messiri", sans-serif;
+}
+
+.btn-order:hover {
+  opacity: 0.95;
+}
+
+.btn-order .animation {
+  border-radius: 100%;
+  animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1),
+      0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1),
+      0 0 0 60px rgba(255, 255, 255, 0.1);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1),
+      0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1),
+      0 0 0 80px rgba(255, 255, 255, 0);
+  }
+}
+
+.warning {
+  color: red;
+  display: none; /* تخفي التنبيه افتراضيًا */
+}
+
+.spacer {
+  height: 100vh; /* For spacing to demonstrate scrolling */
+}
+
+
+.slide-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  height: auto;
+}
+
+.slide {
+  display: flex;
+  transition: transform 1s ease;
+  width: 100%;
+}
+
+.slide img {
+  min-width: 100%;
+  height: auto;
+}
+
+.revi {
+  position: relative;
+  width: fit-content;
+
+}
+.revi::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  bottom: -5px;
+  background: #8a0909;
+}
